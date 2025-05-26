@@ -79,7 +79,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .hero_sec h2 {
@@ -134,7 +133,7 @@ body {
   border: none;
   padding: 0px 25px;
   height: 40px;
-  margin-top: 40px;
+    margin-top: 20px;
 }
 
 .btn_download a {
@@ -150,18 +149,16 @@ body {
 }
 
 .product_sec {
-  margin: 30px auto 60px auto;
-  height: 400px;
+  margin: 30px auto 45px auto;
+  height: auto;
+  max-height: 400px;
 }
 
 .product-img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.product-col {
-  margin-bottom: 30px;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .carousel {
@@ -326,15 +323,26 @@ body {
     width: 90%;
 
   }
-
+.btn_download{
+    margin-top: 10px;
+}
   .product_sec {
-    margin: 30px auto 60px auto;
     width: 90%;
   }
 
-  .btn_download {
-    margin-top: 25px;
-  }
+  
+.product_sec {
+  margin: 40px auto 75px auto;
+  height: auto;
+  max-height: 300px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
 
     .footer-container {
     flex-direction: column;
@@ -346,3 +354,10 @@ body {
     min-width: unset;
   }
 }
+
+@media (max-width: 568px) {
+
+  .hero_sec h2 {
+    font-size: 20px;
+    padding-left: 30px;
+  }}
